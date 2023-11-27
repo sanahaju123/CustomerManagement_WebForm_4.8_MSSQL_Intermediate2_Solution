@@ -43,7 +43,7 @@ namespace CustomerManagementApp
             }
         }
 
-        protected void btnsave_Click(object sender, EventArgs e)
+        protected void btnSave_Click(object sender, EventArgs e)
         {
             var newCustomer = new CustomerModel
             {
@@ -56,7 +56,7 @@ namespace CustomerManagementApp
             BindGridView();
         }
 
-        protected void btnupdate_Click(object sender, EventArgs e)
+        protected void btnUpdate_Click(object sender, EventArgs e)
         {
             string id = gv.SelectedRow.Cells[1].Text.ToString();
             var existingCustomer = _customerService.GetById(id);
@@ -72,7 +72,7 @@ namespace CustomerManagementApp
             }
         }
 
-        protected void btndlt_Click(object sender, EventArgs e)
+        protected void btnDelete_Click(object sender, EventArgs e)
         {
             string id = gv.SelectedRow.Cells[1].Text.ToString();
             _customerService.Delete();

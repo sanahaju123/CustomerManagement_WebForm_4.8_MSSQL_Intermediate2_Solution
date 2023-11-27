@@ -13,7 +13,7 @@ namespace CustomerManagementApp.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202311051308219_initial"; }
+            get { return "202311270227591_initial"; }
         }
         
         string IMigrationMetadata.Source
