@@ -28,14 +28,14 @@ namespace CustomerManagementApp.DAL.Services
 
         public string Add()
         {
-            string qry = "insert into CustomerModels(Title, IsCompleted, DueDate)" +
+            string qry = "insert into CustomerModels(FirstName, LastName, DateOfBirth)" +
                 "values('";
             return qry;
         }
 
         public string Update()
         {
-            var query = "update CustomerModels set Title='";
+            var query = "update CustomerModels set FirstName='";
             return query;
         }
 
